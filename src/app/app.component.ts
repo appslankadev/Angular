@@ -10,4 +10,8 @@ export class AppComponent {
   user = "staff";
   heroes : string[] = ['Vijay', 'Surya', 'Vikaram', 'Rajani', 'kamal', 'karthick', 'simpu', 'sethupathi'];
   time: number= 23;
+
+  clickMe(x){
+    this.time = x;
+  }
 }

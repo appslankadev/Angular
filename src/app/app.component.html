@@ -12,14 +12,18 @@
   </mat-list-option>
 </mat-selection-list>
 
+<button (click)="clickMe(17)">Click me!</button>
+
 <h2 *ngIf="time == 10" style="color:white;background-color: blue; padding: 20px;">
   Hi Good morning!
 </h2>
 
-<h2 *ngIf="time > 12" style="color:white;background-color: blue; padding: 20px;">
+<h2 *ngIf="time >= 12" style="color:white;background-color: blue; padding: 20px;">
   Hi good After noon!
 </h2>
 
 <h2 *ngIf="time >= 23" style="color:white;background-color: red; padding: 20px;">
   Hi what do you do in midnight?
 </h2>
+
+<h1>This is the value of the time now {{ time }}</h1>
