@@ -1,2 +1,23 @@
-<h1>This is our first angular application</h1>
-<h5>This will be another tiltle {{ title}}</h5>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Apps Lanka Dev</span>
+    <span class="example-spacer"></span>
+    <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-selection-list #shoes>
+  <mat-list-option *ngFor="let hero of heroes">
+    {{ hero }}
+  </mat-list-option>
+</mat-selection-list>
+
+<ul>
+  <li *ngFor="let h of heroes"> {{ h }}</li>
+</ul>
+
+<!--
+<p *ngIf="heroes.length == 7">There are some heros!</p>
+
+<p *ngIf="user == 'admin'">Can click this link</p>
+<p *ngIf="user == 'staff'">Hi dear staff, click this</p> -->
