@@ -12,12 +12,14 @@
   </mat-list-option>
 </mat-selection-list>
 
-<ul>
-  <li *ngFor="let h of heroes"> {{ h }}</li>
-</ul>
+<h2 *ngIf="time == 10" style="color:white;background-color: blue; padding: 20px;">
+  Hi Good morning!
+</h2>
 
-<!--
-<p *ngIf="heroes.length == 7">There are some heros!</p>
+<h2 *ngIf="time > 12" style="color:white;background-color: blue; padding: 20px;">
+  Hi good After noon!
+</h2>
 
-<p *ngIf="user == 'admin'">Can click this link</p>
-<p *ngIf="user == 'staff'">Hi dear staff, click this</p> -->
+<h2 *ngIf="time >= 23" style="color:white;background-color: red; padding: 20px;">
+  Hi what do you do in midnight?
+</h2>
