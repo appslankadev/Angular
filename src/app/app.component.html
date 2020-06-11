@@ -12,7 +12,13 @@
   </mat-list-option>
 </mat-selection-list>
 
-<button (click)="clickMe(17)">Click me!</button>
+<div style="padding:30px;">
+  <input (change)="calculate($event)" type="number">
+  <h2 style="background-color: blue;color:white">{{values}} LKR</h2>
+</div>
+
+
+<!-- <button (click)="clickMe(17)">Click me!</button>
 
 <h2 *ngIf="time == 10" style="color:white;background-color: blue; padding: 20px;">
   Hi Good morning!
@@ -26,4 +32,4 @@
   Hi what do you do in midnight?
 </h2>
 
-<h1>This is the value of the time now {{ time }}</h1>
+<h1>This is the value of the time now {{ time }}</h1> -->
